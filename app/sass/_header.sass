@@ -1,44 +1,40 @@
 #header
     height: 140px
     background-color:  rgba(255, 255, 255, 0.7)
-    .section
-        #logo
+    #social_links
+        font-family: FontAwesome
+        padding-left: 0
+        margin: 0
+        li
+            list-style: none
             display: inline-block
-            margin: 50px auto
+            padding: 0 17px
+            &:first-of-type
+                padding-left: 0
             a
-                h1
-                    margin: 0
-                    font-family: AgencyFB
-                    font-size: 28px
-                    letter-spacing: 2px
-                    text-transform: uppercase
-                    color: $black
-        #social_links,
-        #menu_bar
-            position: absolute
-            left: 0
-            top: 55px
-        #social_links
-            font-family: FontAwesome
-            li
-                list-style: none
-                display: inline-block
-                padding: 0 17px
-                a
-                    display: block
-                    font-size: 20px
-                    color: $link-color
-                    text-decoration: none
-        #menu_bar
-            right: 0
-            width: 20px
+                display: block
+                font-size: 20px
+                line-height: 140px
+                color: $link-color
+                text-decoration: none
+    #logo
+        width: 100%
+        h1
+            dispay: block
+            margin: 0 auto
+            font-family: AgencyFB
+            font-size: 26px
+            line-height: 140px
+            letter-spacing: 3px
+            text-transform: uppercase
+            color: $black
+    #menu_bar
+        float: right
+        .menu_wrapper
             height: 20px
-            float: right
-            position: relative
+            width: 20px
             span
-                height: 4px
-                width: 100%
-                background-color: $menu-color
-                position: absolute
-                left: 0
-                top: 8px
+                font-family: FontAwesome
+                font-size: 20px
+                line-height: 140px
+                color: $menu-color

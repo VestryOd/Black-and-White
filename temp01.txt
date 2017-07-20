@@ -1,0 +1,68 @@
+<div id="header">
+            <div class="section">
+                <div class="col-xs-4">
+                    <ul id="social_links">
+                        <li><a href="https://dribbble.com">&#xf17d;</a></li>
+                        <li><a href="https://twitter.com/">&#xf099;</a></li>
+                        <li><a href="https://www.behance.net/">&#xf1b5;</a></li>
+                        <li><a href="https://vimeo.com/">&#xf194;</a></li>
+                        <li><a href="https://www.flickr.com">&#xf16e;</a></li>
+                    </ul> 
+                </div>
+                <div class="col-xs-4">
+                    <a href="#header" id="logo">
+                        <h1>black &amp; white</h1>
+                    </a>
+                </div>
+                <div class="col-xs-4">
+                    <div id="menu_bar">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+	    </div>
+
+#header
+    height: 140px
+    background-color:  rgba(255, 255, 255, 0.7)
+    .section
+        #logo
+            display: inline-block
+            margin: 50px auto
+            a
+                h1
+                    margin: 0
+                    font-family: AgencyFB
+                    font-size: 28px
+                    letter-spacing: 2px
+                    text-transform: uppercase
+                    color: $black
+        #social_links,
+        #menu_bar
+            position: absolute
+            left: 0
+            top: 55px
+        #social_links
+            font-family: FontAwesome
+            li
+                list-style: none
+                display: inline-block
+                padding: 0 17px
+                a
+                    display: block
+                    font-size: 20px
+                    color: $link-color
+                    text-decoration: none
+        #menu_bar
+            right: 0
+            width: 20px
+            height: 20px
+            float: right
+            position: relative
+            span
+                height: 4px
+                width: 100%
+                background-color: $menu-color
+                position: absolute
+                left: 0
+                top: 8px
