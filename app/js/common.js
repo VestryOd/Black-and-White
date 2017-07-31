@@ -6,8 +6,12 @@ $(document).ready(function() {
     $(menu).css("height", win_h);
     
     var menuBar = $("#header #menu_bar");
+    var menuClose = $("#menu #close_btn");
     
     menuBar.click(function() {
-        var menu = $("#header #menu").toggleClass("acive");
+        $("#header #menu").removeClass("fadeOutRight").toggleClass("fadeInRight").removeClass("hidden");
+    });
+    menuClose.click(function() {
+        $("#header #menu").removeClass("fadeInRight").toggleClass("fadeOutRight");
     });
 });

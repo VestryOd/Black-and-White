@@ -52,7 +52,7 @@ gulp.task('smartgrid', function() {
 
 gulp.task('sass', function(){ // Создаем таск Sass
     return gulp.src('app/sass/**/*.sass') // Берем источник
-        .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
+        .pipe(sass({outputStyle: 'expanded'})) // Преобразуем Sass в CSS посредством gulp-sass
         //.pipe(gcmq()) - if use smartgrid to group media queries
         .pipe(autoprefixer(['last 15 versions', '> 0.01%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
         .pipe(gulp.dest('app/css')) // Выгружаем результата в папку app/css
@@ -132,13 +132,13 @@ gulp.task('img', function() {
 });
 
 gulp.task('bootstrap', function() {
-	return gulp.src('app/libs/bootstrap.scss')
+	return gulp.src('app/libs/bootstrap-sass/bootstrap.scss')
 	.pipe(sass())
 	.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-	.pipe(gulp.dest('app/css'))
+	.pipe(gulp.dest('app/libs/bootstrap-sass/dist'))
 	.pipe(cssnano())
 	.pipe(rename({suffix: '.min'}))
-	.pipe(gulp.dest('app/css/'));
+	.pipe(gulp.dest('app/libs/bootstrap-sass/dist'));
 });
 
 gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {

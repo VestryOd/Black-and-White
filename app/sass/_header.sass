@@ -6,9 +6,13 @@
         z-index: 30
         position: absolute
         top: 0
-        right: -999px
+        right: 0
         width: 300px
         background-color: $menu-bgc
+        .active
+            right: 0
+        .hidden
+            display: none
         #close_btn
             width: 20px
             height: 20px
