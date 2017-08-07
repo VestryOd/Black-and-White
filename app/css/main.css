@@ -231,13 +231,43 @@ body #main .section_row {
   padding: 15px;
 }
 
-#works .img_block .img_wrapper {
+#works .img_block .bwWrapper {
+  position: relative;
+  display: block;
+}
+
+#works .img_block .bwWrapper .img_caption {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  width: -webkit-calc(100% - 7px);
+  width: -moz-calc(100% - 7px);
+  width: calc(100% - 7px);
+  height: 65px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#works .img_block .bwWrapper .img_stats {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  background-color: #fff;
+  width: -webkit-calc(100% - 7px);
+  width: -moz-calc(100% - 7px);
+  width: calc(100% - 7px);
+  height: 65px;
+}
+
+#works .img_block .bwWrapper .img_wrapper {
   background-color: #fff;
   padding: 5px;
   width: 100%;
   width: 265px;
   height: 265px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
