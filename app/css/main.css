@@ -70,7 +70,7 @@ body #main a {
 }
 
 body #main .section_row {
-  max-width: 1170px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -229,6 +229,7 @@ body #main .section_row {
 
 #works .img_block {
   padding: 15px;
+  width: 100%;
 }
 
 #works .img_block .bwWrapper {
@@ -236,36 +237,11 @@ body #main .section_row {
   display: block;
 }
 
-#works .img_block .bwWrapper .img_caption {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  width: -webkit-calc(100% - 7px);
-  width: -moz-calc(100% - 7px);
-  width: calc(100% - 7px);
-  height: 65px;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-#works .img_block .bwWrapper .img_stats {
-  position: absolute;
-  bottom: 5px;
-  left: 5px;
-  right: 5px;
-  background-color: #fff;
-  width: -webkit-calc(100% - 7px);
-  width: -moz-calc(100% - 7px);
-  width: calc(100% - 7px);
-  height: 65px;
-}
-
 #works .img_block .bwWrapper .img_wrapper {
   background-color: #fff;
   padding: 5px;
-  width: 100%;
-  width: 265px;
-  height: 265px;
+  width: 270px;
+  height: 270px;
   overflow: hidden;
   cursor: pointer;
 }
