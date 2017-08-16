@@ -237,6 +237,15 @@ body #main .section_row {
   display: block;
 }
 
+#works .img_block .bwWrapper .img_caption {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 260px;
+  height: 65px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 #works .img_block .bwWrapper .img_wrapper {
   background-color: #fff;
   padding: 5px;
